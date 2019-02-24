@@ -3,7 +3,7 @@
 This library allows an Arduino board to control LEDs.
 
 For more information about this library please visit it at
-https://github.com/gmarty2000/arduino/wiki/LED
+https://github.com/gmarty2000/arduino/wiki
 
 == License ==
 
