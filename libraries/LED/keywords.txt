@@ -5,3 +5,4 @@ brightness	KEYWORD2
 blink	KEYWORD2
 fadeIn	KEYWORD2
 fadeOut	KEYWORD2
+toString	KEYWORD2
