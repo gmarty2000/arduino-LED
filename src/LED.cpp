@@ -56,23 +56,6 @@ void LED::fadeOut(int time) {
     }
 }
 
-void LED::sendMorseCode(Morse morse, int time) {
-    for (int i = 0; i < morse.length(); i++) {
-        char c = morse.getSignal(i);
-
-        switch (c) {
-            case '.':   this->on(time);
-                        this->off(time / 4);
-                        break;
-            case '-':   this->on(time * 2);
-                        this->off(time / 4);
-                        break;
-            case ' ':   this->off(time / 2);
-                        break;
-        }
-    }
-}
-
 /* Method - It returns the LED informations */
 String LED::toString() {
     String ret = String("LED: {");

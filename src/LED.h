@@ -2,7 +2,6 @@
 #define __LED_h
 
 #include "Arduino.h"
-#include "utility/Morse.h"
 
 class LED {
     public:     LED(int);
@@ -12,7 +11,6 @@ class LED {
                 void blink(int);
                 void fadeIn(int);
                 void fadeOut(int);
-                void sendMorseCode(Morse, int);
                 String toString();
     private:    int pin;
 };
