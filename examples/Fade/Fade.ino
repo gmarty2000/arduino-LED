@@ -2,10 +2,11 @@
 
 LED led(11);
 
-void setup() {}
+void setup() {
+  led.begin(1000);
+}
 
 void loop() {
-  int time = 1000;
-  led.fadeIn(time);
-  led.fadeOut(time);
+  led.fadeIn(0, 250);
+  led.fadeOut(250, 1000);
 }

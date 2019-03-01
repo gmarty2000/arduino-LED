@@ -2,8 +2,10 @@
 
 LED led(11);
 
-void setup() {}
+void setup() {
+  led.begin(1000);
+}
 
 void loop() {
-  led.blink(1000);
+  led.blink(0, 1000);
 }

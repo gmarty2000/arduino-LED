@@ -5,7 +5,9 @@ Morse morse;
 
 void setup() {
   morse.translate("SOS");
-  led.sendMorseCode(morse, 200);
+  led.begin(5000);
 }
 
-void loop() {}
+void loop() {
+  led.sendMorseCode(0, 3500, morse);
+}

@@ -6,15 +6,20 @@
 
 class LED {
     public:     LED(int);
-                void on(int);
-                void off(int);
-                void brightness(int, int);
-                void blink(int);
-                void fadeIn(int);
-                void fadeOut(int);
-                void sendMorseCode(Morse, int);
+                void begin(int);
+                void on();
+                void off();
+                void brightness(int);
+                void on(int, int);
+                void off(int, int);
+                void brightness(int, int, int);
+                void blink(int, int);
+                void fadeIn(int, int);
+                void fadeOut(int, int);
+                void sendMorseCode(int, int, Morse);
                 String toString();
     private:    int pin;
+                int time;
 };
 
 #endif
