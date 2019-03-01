@@ -10,6 +10,7 @@ on	KEYWORD2
 off	KEYWORD2
 brightness	KEYWORD2
 blink	KEYWORD2
+flash	KEYWORD2
 fadeIn	KEYWORD2
 fadeOut	KEYWORD2
 sendMorseCode	KEYWORD2

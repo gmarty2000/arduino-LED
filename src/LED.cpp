@@ -68,6 +68,16 @@ void LED::blink(int beginTime, int endTime) {
     this->off(middleTime, endTime);
 }
 
+/* Method - It flashes the LED */
+void LED::flash(int beginTime, int endTime) {
+    int timeBreak = (endTime - beginTime) / 4;
+
+    this->on(beginTime, beginTime + timeBreak);
+    this->off(beginTime + timeBreak, beginTime + (timeBreak * 2));
+    this->on(beginTime + (timeBreak * 2), beginTime + (timeBreak * 3));
+    this->fadeOut(beginTime + (timeBreak * 3), endTime);
+}
+
 /* Method - It makes fade-in effect */
 void LED::fadeIn(int beginTime, int endTime) {
     int max_light = 256;
