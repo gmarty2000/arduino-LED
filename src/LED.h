@@ -14,6 +14,7 @@ class LED {
                 void off(int, int);
                 void brightness(int, int, int);
                 void blink(int, int);
+                void blink(int, int, int);
                 void flash(int, int);
                 void fadeIn(int, int);
                 void fadeOut(int, int);
