@@ -68,6 +68,14 @@ void LED::blink(int beginTime, int endTime) {
     this->off(middleTime, endTime);
 }
 
+/* Method - It blinks the LED with dimmed intensity*/
+void LED::blink(int beginTime, int endTime, int light) {
+    int middleTime = (endTime + beginTime) / 2;
+
+    this->brightness(beginTime, middleTime, light);
+    this->off(middleTime, endTime);
+}
+
 /* Method - It flashes the LED */
 void LED::flash(int beginTime, int endTime) {
     int timeBreak = (endTime - beginTime) / 4;
